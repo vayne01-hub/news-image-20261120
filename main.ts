@@ -762,7 +762,7 @@ function drawPins(log: string[]): void {
 type Feature = { n: number; chip: string; headline: string; context: string; source: string };
 const HERO = {
   chip: "404 DRONES",
-  headline: "Russia's biggest strike of the war hits Kyiv's bridges",
+  headline: "Russia's strike hits three Kyiv bridges",
   context:
     "404 drones and 111 missiles overnight; 8 killed, 28 hurt. Two missiles and a drone fell inside Poland; NATO jets scrambled.",
   source: "ISW · UKRAINIAN AIR FORCE",
@@ -773,7 +773,7 @@ const FEATURES: Feature[] = [
     chip: "−3.7% S&P",
     headline: "AI rout tips S&P 500 and Dow into correction",
     context:
-      "Nvidia fell 14.0% to $125.53 on an SEC probe; Anthropic slid 8.5% to $88.91, near $83 IPO.",
+      "Nvidia plunged 14.0% to $125.53 on reports of an SEC accounting probe; Anthropic slid 8.5% to $88.91, near its $83 IPO price.",
     source: "WSJ · NASDAQ",
   },
   {
@@ -801,14 +801,14 @@ const FEATURES: Feature[] = [
     n: 7,
     chip: "90 MIN",
     headline: "Trump defends Putin ties in 90-minute presser",
-    context: "He vowed a 'tremendous tax' on US firms' data centres abroad; Putin wants peace.",
+    context: "He vowed a 'tremendous tax' on US firms building data centres abroad and said Putin wants peace.",
     source: "AP · CNN",
   },
   {
     n: 8,
     chip: "FROM 1 DEC",
     headline: "Estonia to shut Russia border for six months",
-    context: "All five crossings close from 1 December after the arson attack on the Threod drone plant.",
+    context: "All five road crossings close from 1 December after the suspected arson attack on the Threod drone plant.",
     source: "REUTERS · ESTONIAN MFA",
   },
 ];
@@ -986,7 +986,7 @@ function drawHero(log: string[]): void {
   // "bridges" on line 2), context (15px, 2 lines), source
   const tx = px + 14;
   const tw = pw - 28;
-  const hl = ["Russia's biggest strike of the war", "hits Kyiv's bridges"];
+  const hl = ["Russia's strike hits", "three Kyiv bridges"];
   log.push(`hero headline 26px, 2 lines: ${hl.map((l) => `"${l}"`).join(" / ")}`);
   drawLines(hl, tx, y0 + 34, 26, 29, "bold", WHITE);
   const ctxLines = wrapText(HERO.context, 15, tw);
