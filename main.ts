@@ -773,7 +773,7 @@ const FEATURES: Feature[] = [
     chip: "−3.7% S&P",
     headline: "AI rout tips S&P 500 and Dow into correction",
     context:
-      "Nvidia plunged 14.0% to $125.53 on reports of an SEC accounting probe; Anthropic slid 8.5% to $88.91, near its $83 IPO price.",
+      "Nvidia −14.0% to $125.53 on a reported SEC probe; Anthropic −8.5% to $88.91 ($83 IPO).",
     source: "WSJ · NASDAQ",
   },
   {
@@ -801,14 +801,14 @@ const FEATURES: Feature[] = [
     n: 7,
     chip: "90 MIN",
     headline: "Trump defends Putin ties in 90-minute presser",
-    context: "He vowed a 'tremendous tax' on US firms building data centres abroad and said Putin wants peace.",
+    context: "He vowed a 'tremendous tax' on US firms' data centres abroad, said Putin wants peace.",
     source: "AP · CNN",
   },
   {
     n: 8,
     chip: "FROM 1 DEC",
     headline: "Estonia to shut Russia border for six months",
-    context: "All five road crossings close from 1 December after the suspected arson attack on the Threod drone plant.",
+    context: "All five crossings close from 1 December after suspected arson at the Threod drone plant.",
     source: "REUTERS · ESTONIAN MFA",
   },
 ];
